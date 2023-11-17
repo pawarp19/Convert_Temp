@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 430px;
+    background: #001933;
+    border-radius: 9px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.icon{
+    font-size: 42px;
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+#celcius,#fahrenheit,#kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input{
+    flex: 0.6;
+    height: 36px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+::placeholder{
+    text-transform: capitalize;
+}
+
+.icon1{
+    flex: 0.1;
+    height: 36px;
+    line-height: 40px;
+    padding: 0 4px;
+    text-align: center;
+    color: white;
+    background-color: #4d5964;
+    border-radius: 0 8px 8px 0;
+    
+}
+
+.btn {
+    text-align: center;
+    margin-top: 29px;
+}
+
+button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btn button:hover{
+    color: #fff;
+    background-color: #454343;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1{
+        font-size: 25px;
+        text-align: center ;
+    }
+}
